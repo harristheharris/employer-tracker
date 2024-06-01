@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS employer_tracker;
+CREATE DATABASE employer_tracker;
+USE employer_tracker;
+
 CREATE TABLE department (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30)
@@ -15,5 +19,7 @@ CREATE TABLE employee (
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     role_id INTEGER,
-    manager_id INTEGER
+    manager_id INTEGER 
 );
+
+-- SOURCE seeds.sql; 
