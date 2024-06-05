@@ -1,4 +1,4 @@
-console.log("Eating");
+console.log("Welcome");
 //import the stuff we need
 //inquirer
 
@@ -7,7 +7,7 @@ import inquirer from 'inquirer';
 import db from './db/connection.js'
 
 const aTest1 = db.query(`SELECT * FROM department`)
-console.log(aTest1);
+//console.log(aTest1);
 
 //we'll start out server with our database connections
 //if the connection is made with no error, run the app
